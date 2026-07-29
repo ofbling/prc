@@ -1,0 +1,12 @@
+version: 2
+
+sources: 
+  - name: tpch
+    description: "Raw TPCH sample data — simulates ingested source data landed in the warehouse."
+    database: samples
+    schema: tpch
+    tables:
+      - name: orders
+      - name: customer
+      - name: lineitem
+      - name: part
