@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fact_orders
+    columns:
+      - name: customer_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_key
+      - name: part_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_parts')
+                field: part_key
